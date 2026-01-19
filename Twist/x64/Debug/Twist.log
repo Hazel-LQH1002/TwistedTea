@@ -1,0 +1,6 @@
+﻿  Application.cpp
+  Test.cpp
+  Generating Code...
+     Creating library F:\visual studio\Twist\x64\Debug\Twist.lib and object F:\visual studio\Twist\x64\Debug\Twist.exp
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+F:\visual studio\Twist\x64\Debug\Twist.exe : fatal error LNK1120: 1 unresolved externals
