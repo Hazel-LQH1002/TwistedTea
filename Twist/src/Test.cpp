@@ -1,9 +1,10 @@
 #include "Test.h"
 #include <stdio.h>
-namespace TwistedTea
+
+namespace Twist
 {
 	void Print()
 	{
-		printf("Hello World!\n");
+		printf("Hello world\n");
 	}
 }

@@ -1,6 +1,5 @@
 #pragma once
-
-namespace TwistedTea
+namespace Twist
 {
 	__declspec(dllexport) void Print();
 }

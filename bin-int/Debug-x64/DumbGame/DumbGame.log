@@ -1,3 +1,2 @@
 ﻿  Application.cpp
-F:\visual studio\TwistedTea\DumbGame\src\Application.cpp(6,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  DumbGame.vcxproj -> F:\visual studio\TwistedTea\bin\Debug-x64\DumbGame\DumbGame.exe
+  DumbGame.vcxproj -> F:\visual studio\Twist\bin\Debug-x64\DumbGame\DumbGame.exe
