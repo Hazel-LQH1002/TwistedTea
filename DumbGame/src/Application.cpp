@@ -1,9 +1,9 @@
-namespace TwistedTea
+namespace Twist
 {
 	__declspec(dllimport) void Print();
 }
 
-void main()
+int main()
 {
-	TwistedTea::Print();
+	Twist::Print();
 }

@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>F:\visual studio\TwistedTea\bin\Debug-x64\TwistedTea\TwistedTea.dll</FullPath>
+      <FullPath>F:\visual studio\Twist\bin\Debug-x64\Twist\Twist.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>F:\visual studio\TwistedTea\bin\Debug-x64\DumbGame\DumbGame.exe</FullPath>
+      <FullPath>F:\visual studio\Twist\bin\Debug-x64\DumbGame\DumbGame.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

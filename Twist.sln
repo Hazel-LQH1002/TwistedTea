@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36717.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DumbGame", "DumbGame\DumbGame.vcxproj", "{42965948-347E-4603-9D91-DF9B87A99A05}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Twist", "TwistedTea\TwistedTea.vcxproj", "{72C7EE76-0436-4565-A556-065E3161EC34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42965948-347E-4603-9D91-DF9B87A99A05}.Debug|x64.ActiveCfg = Debug|x64
+		{42965948-347E-4603-9D91-DF9B87A99A05}.Debug|x64.Build.0 = Debug|x64
+		{42965948-347E-4603-9D91-DF9B87A99A05}.Release|x64.ActiveCfg = Release|x64
+		{42965948-347E-4603-9D91-DF9B87A99A05}.Release|x64.Build.0 = Release|x64
+		{72C7EE76-0436-4565-A556-065E3161EC34}.Debug|x64.ActiveCfg = Debug|x64
+		{72C7EE76-0436-4565-A556-065E3161EC34}.Debug|x64.Build.0 = Debug|x64
+		{72C7EE76-0436-4565-A556-065E3161EC34}.Release|x64.ActiveCfg = Release|x64
+		{72C7EE76-0436-4565-A556-065E3161EC34}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82F65571-7E9D-42CF-B8DF-D750B3AE02FD}
+	EndGlobalSection
+EndGlobal
