@@ -78,12 +78,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TwistedTea\TwistedTea.vcxproj">
-      <Project>{72c7ee76-0436-4565-a556-065e3161ec34}</Project>
-    </ProjectReference>
+    <ClCompile Include="src\Application.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Application.cpp" />
+    <ProjectReference Include="..\Twist\Twist.vcxproj">
+      <Project>{775d2aba-3796-4a9c-9a6b-3f07c396f063}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
