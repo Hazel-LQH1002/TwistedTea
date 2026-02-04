@@ -1,9 +1,22 @@
-namespace Twist
-{
-	__declspec(dllimport) void Print();
-}
+#include "Twist.h"
 
-int main()
+class DumbGame : public Twist::Application
 {
-	Twist::Print();
+public:
+	DumbGame()
+	{
+
+	}
+
+	~DumbGame()
+	{
+
+	}
+
+};
+
+
+Twist::Application* Twist::CreateApplication()
+{
+	return new DumbGame();
 }
