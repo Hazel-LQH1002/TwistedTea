@@ -1,2 +1,12 @@
 ﻿  Application.cpp
+F:\visual studio\Twist\Twist\src\Twist\Log.h(15,42): warning C4251: 'Twist::Log::s_CoreLogger': 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of 'Twist::Log'
+  (compiling source file 'src/Application.cpp')
+      F:\visual studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(1565,7):
+      see declaration of 'std::shared_ptr<spdlog::logger>'
+  
+F:\visual studio\Twist\Twist\src\Twist\Log.h(16,42): warning C4251: 'Twist::Log::s_ClientLogger': 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of 'Twist::Log'
+  (compiling source file 'src/Application.cpp')
+      F:\visual studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory(1565,7):
+      see declaration of 'std::shared_ptr<spdlog::logger>'
+  
   DumbGame.vcxproj -> F:\visual studio\Twist\bin\Debug-x64\DumbGame\DumbGame.exe

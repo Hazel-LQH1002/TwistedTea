@@ -110,6 +110,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>TW_PLATFORM_WINDOWS; TW_BUILD_DLL; _DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Twist\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,6 +126,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>TW_PLATFORM_WINDOWS; TW_BUILD_DLL; NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Twist\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,9 +135,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Twist\Log.cpp" />
     <ClCompile Include="src\Twist\Application.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Twist\Log.h" />
     <ClInclude Include="src\Twist.h" />
     <ClInclude Include="src\Twist\Application.h" />
     <ClInclude Include="src\Twist\Core.h" />

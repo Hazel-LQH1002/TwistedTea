@@ -1,0 +1,3 @@
+[submodule "Twist/vendor/spdlog"]
+	path = Twist/vendor/spdlog
+	url = https://github.com/gabime/spdlog
