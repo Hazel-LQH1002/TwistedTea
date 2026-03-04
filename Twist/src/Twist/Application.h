@@ -1,6 +1,8 @@
 #pragma once
 
 #include "Core.h"
+#include "Event/Event.h"
+
 namespace Twist
 {
 	class TWIST_API Application
