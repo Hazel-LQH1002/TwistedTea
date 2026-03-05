@@ -21,6 +21,9 @@ project "Twist"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "twpch.h"
+	pchsource "Twist/src/twpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

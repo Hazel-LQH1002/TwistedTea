@@ -1,9 +1,7 @@
 #pragma once
 
+#include "../twpch.h"
 #include "../Core.h"
-
-#include <string>
-#include <functional>
 
 namespace Twist
 {

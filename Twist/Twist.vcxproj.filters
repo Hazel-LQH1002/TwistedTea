@@ -4,6 +4,9 @@
     <Filter Include="Twist">
       <UniqueIdentifier>{8019320E-EC2D-5ABF-B5AF-FD1E218356F0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Twist\Event">
+      <UniqueIdentifier>{D1BA84CB-3D70-FDC0-C664-F7973219F4C4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Twist.h" />
@@ -16,13 +19,22 @@
     <ClInclude Include="src\Twist\EntryPoint.h">
       <Filter>Twist</Filter>
     </ClInclude>
+    <ClInclude Include="src\Twist\Event\ApplicationEvent.h">
+      <Filter>Twist\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Twist\Event\Event.h">
+      <Filter>Twist\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Twist\Event\KeyEvent.h">
+      <Filter>Twist\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Twist\Event\MouseEvent.h">
+      <Filter>Twist\Event</Filter>
+    </ClInclude>
     <ClInclude Include="src\Twist\Log.h">
       <Filter>Twist</Filter>
     </ClInclude>
-    <ClInclude Include="src\Twist\Event\Event.h" />
-    <ClInclude Include="src\Twist\Event\KeyEvent.h" />
-    <ClInclude Include="src\Twist\Event\MouseEvent.h" />
-    <ClInclude Include="src\Twist\Event\ApplicationEvent.h" />
+    <ClInclude Include="src\twpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Twist\Application.cpp">
@@ -31,5 +43,6 @@
     <ClCompile Include="src\Twist\Log.cpp">
       <Filter>Twist</Filter>
     </ClCompile>
+    <ClCompile Include="src\twpch.cpp" />
   </ItemGroup>
 </Project>
