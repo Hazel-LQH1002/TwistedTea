@@ -49,7 +49,7 @@ project "Twist"
 
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "on"
+		staticruntime "off"
 		systemversion "10.0"
 
 		defines
@@ -93,12 +93,13 @@ project "DumbGame"
 	includedirs
 	{
 		"Twist/vendor/spdlog/include",
+		"Twist/vendor/GLFW/include",
 		"Twist/src"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "on"
+		staticruntime "off"
 		systemversion "10.0"
 
 		defines

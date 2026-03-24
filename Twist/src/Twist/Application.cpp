@@ -8,26 +8,22 @@ namespace Twist
 {
 	Application::Application()
 	{
-
+		m_Window = std::unique_ptr<Window>(new Window());
+		m_Window->Init();
 	}
 
 	Application::~Application()
 	{
-
+	
 	}
 
 	void Application::Run()
 	{
-		WindowResizeEvent resizeEvent(1280, 720);
-		if (resizeEvent.IsInCategory(EventCategoryApplication))
+		while (m_Running)
 		{
-			TW_TRACE(resizeEvent.GetEventString());
+			glClearColor(0, 0, 0, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
 		}
-		if (resizeEvent.IsInCategory(EventCategoryInput))
-		{
-			TW_TRACE(resizeEvent.GetEventString());
-		}
-
-		while (true);
 	}
 }
