@@ -4,10 +4,10 @@
 
 namespace Twist
 {
-	class TWIST_API WindowResizeEvent : public Event
+	class TWIST_API WindowResizedEvent : public Event
 	{
 	public:
-		WindowResizeEvent(unsigned int width, unsigned int height)
+		WindowResizedEvent(unsigned int width, unsigned int height)
 			: m_Width(width)
 			, m_Height(height) {}
 
@@ -17,23 +17,32 @@ namespace Twist
 		std::string GetEventString() const override
 		{
 			std::stringstream ss;
-			ss << "WindowResizeEvent: width-" << m_Width << ", height-" << m_Height;
+			ss << "WindowResizedEvent: width-" << m_Width << ", height-" << m_Height;
 			return ss.str();
 		}
 
-		EVENT_CLASS_TYPE(WindowResize)
+		EVENT_CLASS_TYPE(WindowResized)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 
 	private:
 		unsigned int m_Width, m_Height;
 	};
 
-	class TWIST_API WindowCloseEvent : public Event
+	class TWIST_API WindowClosedEvent : public Event
 	{
 	public:
-		WindowCloseEvent(){}
+		WindowClosedEvent(){}
 		
-		EVENT_CLASS_TYPE(WindowClose)
+		EVENT_CLASS_TYPE(WindowClosed)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
+	};
+
+	class TWIST_API WindowMaximizedEvent : public Event
+	{
+	public:
+		WindowMaximizedEvent() {}
+
+		EVENT_CLASS_TYPE(WindowMaximized)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 

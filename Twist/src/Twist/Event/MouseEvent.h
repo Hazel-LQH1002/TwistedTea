@@ -4,7 +4,7 @@
 
 namespace Twist
 {
-	class HAZEL_API MouseMovedEvent : public Event
+	class TWIST_API MouseMovedEvent : public Event
 	{
 	public:
 		MouseMovedEvent(float x, float y)
@@ -14,7 +14,7 @@ namespace Twist
 		inline float GetX() const { return m_MouseX; }
 		inline float GetY() const { return m_MouseY; }
 
-	std:string GetEventString() const override
+	std::string GetEventString() const override
 	{
 		std::stringstream ss;
 		ss << "MouseMovedEvent: " << m_MouseX << ", " << m_MouseY;
@@ -33,7 +33,7 @@ namespace Twist
 	public:
 		MouseScrolledEvent(float xOffset, float yOffset)
 			: m_XOffset(xOffset)
-			, m_YOffset(yOffest) {}
+			, m_YOffset(yOffset) {}
 
 		inline float GetXOffset() { return m_XOffset; }
 		inline float GetYOffset() { return m_YOffset; }
@@ -55,7 +55,7 @@ namespace Twist
 	class TWIST_API MouseButtonEvent : public Event
 	{
 	public:
-		inline GetMouseButton() const { return m_Button; }
+		inline int GetMouseButton() const { return m_Button; }
 
 		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
 
@@ -70,7 +70,7 @@ namespace Twist
 	{
 	public:
 		MouseButtonPressedEvent(int button)
-			: MouseEvent(button) {}
+			: MouseButtonEvent(button) {}
 
 		std::string GetEventString()
 		{
@@ -87,7 +87,7 @@ namespace Twist
 	{
 	public:
 		MouseButtonReleasedEvent(int button)
-			: MouseEvent(button) {
+			: MouseButtonEvent(button) {
 		}
 
 		std::string GetEventString()

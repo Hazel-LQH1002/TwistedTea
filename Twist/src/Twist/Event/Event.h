@@ -1,16 +1,17 @@
 #pragma once
 
-#include "../twpch.h"
-#include "../Core.h"
+#include "twpch.h"
+#include "Core.h"
 
 namespace Twist
 {
 	enum class EventType_e
 	{
 		NONE = 0,
-		WindowClose,
-		WindowResize,
+		WindowClosed,
+		WindowResized,
 		WindowMoved,
+		WindowMaximized,
 		AppTick,
 		AppUpdate,
 		AppRender,
@@ -19,7 +20,7 @@ namespace Twist
 		MouseButtonPressed,
 		MouseButtonReleased,
 		MouseMoved,
-		MouseSrolled
+		MouseScrolled
 	};
 
 	enum EventCategory_e

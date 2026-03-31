@@ -26,6 +26,12 @@ namespace Twist
 		bool IsVSync() const { return m_Data.VSync; };
 
 		//static Window* Create(const WindowInstance& wInst = WindowInstance());
+		template <typename T, typename F>
+		void Bind_CallBackFn(T* pObj, F function)
+		{
+			auto callBackFn = [pObj, function](Event& x){(pObj->*function)(x);};
+			SetEventCallback(callBackFn);
+		}
 
 	private:
 		void ShutDown();

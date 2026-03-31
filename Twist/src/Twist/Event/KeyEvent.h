@@ -4,11 +4,11 @@
 
 namespace Twist
 {
-	class TWISE_API KeyEvent : public Event
+	class TWIST_API KeyEvent : public Event
 	{
 	public:
-		inline int GetKeyCode() return{ m_KeyCode; }
-		EVENT_CLASS_CATEGORY{EVENT_CATEGORY_KEYBOARD | EVENT_CATEGORY_INPUT}
+		inline int GetKeyCode() { return m_KeyCode; }
+		EVENT_CLASS_CATEGORY(EventCategoryKeyboard | EventCategoryInput)
 
 	protected:
 		KeyEvent(int keyCode)
@@ -24,7 +24,7 @@ namespace Twist
 			: KeyEvent(keyCode)
 			, m_RepeatCount(repeatCount) {}
 
-		inline int GetRepeatCount() return { m_RepeeatCount; }
+		inline int GetRepeatCount() { return m_RepeatCount; }
 
 		std::string GetEventString() const override
 		{
@@ -52,7 +52,7 @@ namespace Twist
 			return ss.str();
 		}
 
-		EVENT_CALSS_TYPE(KeyReleased)
+		EVENT_CLASS_TYPE(KeyReleased)
 	};
 
 }
