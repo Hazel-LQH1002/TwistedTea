@@ -1,6 +1,5 @@
 #include "twpch.h"
 #include "Application.h"
-#include "Event/ApplicationEvent.h"
 #include "Log.h"
 
 namespace Twist
@@ -19,7 +18,18 @@ namespace Twist
 
 	void Application::OnEvent(Event& e)
 	{
+		EventDispatcher dispatcher(e);
+		dispatcher.Dispatch<WindowClosedEvent>([this](WindowClosedEvent &e)
+			{
+				return OnWindowClose(e);
+			});
 		std::cout << e.GetEventString() << std::endl;
+	}
+
+	bool Application::OnWindowClose(WindowClosedEvent& e)
+	{
+		m_Running = false;
+		return true;
 	}
 
 	void Application::Run()

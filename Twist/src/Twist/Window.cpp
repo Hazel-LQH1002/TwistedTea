@@ -113,6 +113,34 @@ namespace Twist
 				MouseMovedEvent event(xPos, yPos);
 				pWindowData->EventCallback(event);
 			});
+
+		glfwSetKeyCallback(m_Window, [](GLFWwindow* pWindow, int key, int scancode, int action, int mods)
+			{
+				WindowData* pWindowData = (WindowData*)glfwGetWindowUserPointer(pWindow);
+				switch (action)
+				{
+				case GLFW_PRESS:
+				{
+					KeyPressedEvent event(key, 0);
+					pWindowData->EventCallback(event);
+					break;
+				}
+				case GLFW_RELEASE:
+				{
+					KeyReleasedEvent event(key);
+					pWindowData->EventCallback(event);
+					break;
+				}
+				case GLFW_REPEAT:
+				{
+					KeyPressedEvent event(key, 1);
+					pWindowData->EventCallback(event);
+					break;
+				}
+				default:
+					break;
+				}
+			});
 	}
 
 	void Window::ShutDown()

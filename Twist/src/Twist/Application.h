@@ -2,6 +2,7 @@
 
 #include "Core.h"
 #include "Event/Event.h"
+#include "Event/ApplicationEvent.h"
 #include "Window.h"
 
 namespace Twist
@@ -14,6 +15,7 @@ namespace Twist
 
 		void Run();
 		void OnEvent(Event& e);
+		bool OnWindowClose(WindowClosedEvent& e);
 
 	private:
 		std::unique_ptr<Window> m_Window;
